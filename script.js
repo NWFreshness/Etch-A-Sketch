@@ -14,12 +14,11 @@ function createGrid(num) {
     gridBoxes.forEach((box)=>{
         box.addEventListener('mouseenter', ()=>{
             box.classList.add('active');
+
         });
     })
 }
 createGrid(16);
-
-
 
 clear.addEventListener('click', ()=>{
     // gridBoxes.forEach((box)=>{
@@ -39,6 +38,7 @@ clear.addEventListener('click', ()=>{
     container.style.gridTemplateRows = `repeat(${userInput}, 1fr)`
     
 })
+
 
 
 
