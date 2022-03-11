@@ -31,6 +31,9 @@ clear.addEventListener('click', ()=>{
     // }
 
     const userInput = +prompt('What grid dimensions would you like?');
+    if(userInput > 100) {
+        userInput = +prompt('Please select a number lower than 100');
+    }
     createGrid(userInput)
     container.style.gridTemplateColumns = `repeat(${userInput}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${userInput}, 1fr)`
